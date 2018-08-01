@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/TimelineLayout"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:gravity="start"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/TimelineToday"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="July 5, 2018"
+        android:gravity="start"
+        android:layout_marginLeft="12dp"
+        android:textSize="14dp"
+        android:id="@+id/TimelineDate"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/TimelineCard"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/TimelineTitle"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="14sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/TimelineTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="12sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/TimelineDeets"/>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
